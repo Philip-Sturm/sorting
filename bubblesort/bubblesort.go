@@ -7,9 +7,9 @@ func BubbleUp(arr []int) bool {
 	check := false
 	for j := 0; j < len(arr)-1; j++ {
 		if arr[j] > arr[j+1] {
-			k := arr[j]
+			zwischenspeicher := arr[j]
 			arr[j] = arr[j+1]
-			arr[j+1] = k
+			arr[j+1] = zwischenspeicher
 			check = true
 		}
 	}
